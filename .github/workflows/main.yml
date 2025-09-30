@@ -26,9 +26,9 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
-          key: mkdocs-windmill-dark-${{ env.cache_id }}
+          key: mkdocs-docskimmer-${{ env.cache_id }}
           path: .cache
           restore-keys: |
-            mkdocs-windmill-dark-
-      - run: pip install mkdocs-windmill-dark 
+            mkdocs-docskimmer-
+      - run: pip install mkdocs-docskimmer 
       - run: mkdocs gh-deploy --force
