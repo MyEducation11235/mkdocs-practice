@@ -1,5 +1,5 @@
 site_name: ИТМО 5 Web-программирование
 
 theme:
-  name: docskimmer
+  name: rtd-dropdown
   color_mode: auto
